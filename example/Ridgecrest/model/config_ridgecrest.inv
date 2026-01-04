@@ -1,0 +1,172 @@
+ [inversion]
+	{inv_params}
+		 top_patch_width = 1e3
+ 	 	 top_patch_length = 0.9e3
+ 	 	 patch_increment_factor = 1.3
+ 	 	 strike_slip = 1
+ 	 	 dip_slip = 1
+ 	 	 normal_slip = 0
+ 
+ 	 	 positivity_strike = -1
+ 	 	 positivity_dip = 0
+ 	 	 positivity_normal = 0
+ 	 	 positivity_max = 1000
+ 	 	 bottom_zero_constraint = 0
+ 	 	
+ 	 	
+ 	 	 smooth_factor = 0.1
+ 	 	 smooth_between_segments = 1
+ 		 smooth_dip_over_strike = 1
+ 	        
+ 	 	
+ 	 	 weight_phase = 1
+         weight_ph_grd = 8000
+ 	 	 weight_azi = 0.1
+ 	 	 weight_gps = 0.1
+ 	 	 weight_gov = 0.015
+
+		 remove_ramp = 1
+ 		 consider_topography = 0
+		 switch_phase = 1
+ 
+[data]
+	{data_params}
+ 		 num_des_sources = 1
+ 		 num_asc_sources = 3
+ 
+         num_x_grd_sources = 2
+         num_y_grd_sources = 2
+
+ 		 num_azi_sources = 1
+ 		 phi1 = 349.25
+ 
+ 		 num_gps_sources = 0
+ 		 gps1h = 1
+ 		 gps1v = 1
+         gps2h = 1
+ 		 gps2v = 1
+ 
+ 		 num_gov_sources = 0
+
+	{data_files}
+ 		 des1 = t71_des.lltnde
+ 		 asc1 = t64_asc_edit.lltnde
+         asc2 = t65_asc_alos2_new.lltnde
+         asc3 = t66_asc_alos2.lltnde
+
+ 		 dec_grdx = Rc_ph_grdx_dec_masked.lltnde
+ 		 asc_grdx = Rc_ph_grdx_asc_masked.lltnde
+         dec_grdy = Rc_ph_grdy_dec_masked.lltnde
+         asc_grdy = Rc_ph_grdy_asc_masked.lltnde
+
+ 		 azi1 = t65_mai.llde
+ 
+ 
+ 		 gps1 = GPS71_new.lldet
+         gps2 = GPS71_new.lldet
+ 
+ 		 gov1 = optical_offset.lldeat
+
+
+[model]
+	{model_params}
+         num_of_sources = 8
+ 		 poisson_ratio = 0.25
+	{origin}
+ 		 xo = -117.5990  
+ 		 yo = 35.7700
+        {trace1}
+         x = -8.379680e+03
+         y = 1.216606e+04
+         z = 0.000000e+00
+       len = 1.686743e+04
+       wid = 2.000000e+04
+       dip = 90
+    strike = 1.357613e+02
+
+        {trace2}
+         x = 3.754998e+02
+         y = -9.218512e+01
+         z = 0.000000e+00
+       len = 1.342378e+04
+       wid = 2.000000e+04
+       dip = 90
+    strike = 1.550313e+02
+
+        {trace3}
+         x = 6.024170e+03
+         y = -8.985788e+03
+         z = 0.000000e+00
+       len = 7.809679e+03
+       wid = 2.000000e+04
+       dip = 90
+    strike = 1.349390e+02
+
+        {trace4}
+         x = 1.181825e+04
+         y = -1.362818e+04
+         z = 0.000000e+00
+       len = 6.971533e+03
+       wid = 2.000000e+04
+       dip = 90
+    strike = 1.222050e+02
+
+        {trace5}
+         x = 2.162483e+04
+         y = -2.278157e+04
+         z = 0.000000e+00
+       len = 1.997896e+04
+       wid = 2.000000e+04
+       dip = 90
+    strike = 1.367795e+02
+
+        {trace6}
+         x = 2.850048e+03
+         y = -1.712625e+04
+         z = 0.000000e+00
+       len = 1.591521e+04
+       wid = 2.000000e+04
+       dip = 90
+    strike = 2.255696e+02
+
+        {trace7}
+         x = 5.936155e+03
+         y = -5.778412e+03
+         z = 0.000000e+00
+       len = 1.158237e+04
+       wid = 2.000000e+04
+       dip = 90
+    strike = 1.295997e+02
+
+        {trace8}
+         x = -4.098370e+03
+         y = 4.863865e+03
+         z = 0.000000e+00
+       len = 8.080616e+03
+       wid = 2.000000e+04
+       dip = 90
+    strike = 1.292350e+02
+
+	{smooth}
+		num_seg_smooth = 4
+		smo1 = 1 2
+		smo2 = 2 3
+        smo3 = 3 4
+        smo4 = 4 5
+		num_inter_smooth = 2
+		
+        smoi1 = 7 2 1
+
+        smoi2 = 6 3 2
+
+    {edge_constraints}
+        bot = 1
+        side = 1
+	top = 0
+        num_side = 5
+        side1 = 1 1 0
+        side2 = 5 0 1
+        side3 = 6 0 1
+        side4 = 8 1 0
+        side5 = 7 0 1
+
