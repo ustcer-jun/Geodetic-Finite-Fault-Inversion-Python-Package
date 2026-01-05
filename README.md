@@ -1,7 +1,9 @@
 # Geodetic Finite-Fault Slip Inversion Framework
 
-A Python-based finite-fault inversion framework using geodetic observations 
-(e.g. InSAR, GNSS) for coseismic and postseismic slip modeling.
+A Python framework for finite-fault slip inversion using geodetic observations, including InSAR phase gradients and GNSS displacements.
+The package supports joint inversion, flexible data weighting, subsampling, and fault geometry construction.
+
+This project is designed for earthquake source studies, geodetic inversion, and research-oriented applications.
 
 ## Introduction
 
@@ -18,20 +20,20 @@ The framework supports:
 
 ## Directory Structure
 
-Geodetic-Finite-Fault-Inversion
-├── src/                    # Core inversion codes
-│   ├── main_inv.py         # Main inversion entry
-│   ├── Green_functions.py  # Green's function construction
-│   ├── Inversion.py        # Inversion solver
-│   ├── Faults_Construct.py # Fault geometry definition
-│   └── utils/              # Supporting modules
-│
-├── example/                # Example datasets
+Geodetic-Finite-Fault-Inversion/
+├── example/
 │   └── Ridgecrest/
-│       ├── input/          # Geodetic observations (GNSS / InSAR)
+│       ├── input/          # GNSS, InSAR, phase-gradient observations
 │       └── model/          # Inversion configuration files
-│
-└── README.md
+└── src/
+    ├── Faults_Construt.py  # Fault geometry construction
+    ├── Green_functions.py  # Green’s function calculation
+    ├── Forward_modeling.py
+    ├── Inversion.py       # Core inversion routines
+    ├── Subsample.py       # Data subsampling
+    ├── Read_Config.py     # Configuration parser
+    ├── main_inv.py        # Main inversion entry
+    └── main_inv_ridgecrest.py
 
 The example dataset corresponds to the 2019 Ridgecrest earthquake sequence
 and is provided for demonstration and testing purposes only.
