@@ -27,20 +27,21 @@ pyproj==3.7.2
 scipy==1.16.2
 pygmt==0.17.0
 psutil==7.1.1
-
+```
 ## Jupyter environment
 ```text
 jupyterlab==4.4.10
 notebook==7.4.7
 ipykernel==7.0.1
 matplotlib-inline==0.2.1
-
+```
 ## Optional: for reproducibility and system dependencies
+```text
 pygmt requires GMT 6.x installed on the system:
 macOS: brew install gmt
 Linux: sudo apt install gmt gmt-dcw gmt-gshhg
 Conda users: conda install -c conda-forge pygmt gmt
-
+```
 ## Directory Structure
 ```text
 Geodetic-Finite-Fault-Inversion/
@@ -60,6 +61,6 @@ Geodetic-Finite-Fault-Inversion/
 
 The example dataset corresponds to the 2019 Ridgecrest earthquake sequence
 and is provided for demonstration and testing purposes only.
-
+```
 ## Reference:
 Yajun Zhang, Xiaohua Xu, Constraining shallow slip deficit with phase gradient data, Geophysical Journal International, Volume 244, Issue 1, January 2026, ggaf427, https://doi.org/10.1093/gji/ggaf427
