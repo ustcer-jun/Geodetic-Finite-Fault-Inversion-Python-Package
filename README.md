@@ -18,6 +18,27 @@ The framework supports:
 - Forwarding 3D displacement using Okada dislocation theory
 - Regularized inversion with optional smoothing constraints
 
+## Requirements (Core dependecies for using this package)
+numpy==2.3.4
+xarray==2025.10.1
+matplotlib==3.10.7
+pyproj==3.7.2
+scipy==1.16.2
+pygmt==0.17.0
+psutil==7.1.1
+
+# Jupyter environment
+jupyterlab==4.4.10
+notebook==7.4.7
+ipykernel==7.0.1
+matplotlib-inline==0.2.1
+
+# Optional: for reproducibility and system dependencies
+# pygmt requires GMT 6.x installed on the system:
+# macOS: brew install gmt
+# Linux: sudo apt install gmt gmt-dcw gmt-gshhg
+# Conda users: conda install -c conda-forge pygmt gmt
+
 ## Directory Structure
 
 Geodetic-Finite-Fault-Inversion/
