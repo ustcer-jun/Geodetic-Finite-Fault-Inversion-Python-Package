@@ -27,17 +27,17 @@ scipy==1.16.2
 pygmt==0.17.0
 psutil==7.1.1
 
-# Jupyter environment
+## Jupyter environment
 jupyterlab==4.4.10
 notebook==7.4.7
 ipykernel==7.0.1
 matplotlib-inline==0.2.1
 
-# Optional: for reproducibility and system dependencies
-# pygmt requires GMT 6.x installed on the system:
-# macOS: brew install gmt
-# Linux: sudo apt install gmt gmt-dcw gmt-gshhg
-# Conda users: conda install -c conda-forge pygmt gmt
+## Optional: for reproducibility and system dependencies
+pygmt requires GMT 6.x installed on the system:
+macOS: brew install gmt
+Linux: sudo apt install gmt gmt-dcw gmt-gshhg
+Conda users: conda install -c conda-forge pygmt gmt
 
 ## Directory Structure
 
