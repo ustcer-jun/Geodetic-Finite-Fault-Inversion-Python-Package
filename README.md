@@ -19,6 +19,7 @@ The framework supports:
 - Regularized inversion with optional smoothing constraints
 
 ## Requirements (Core dependecies for using this package)
+```text
 numpy==2.3.4
 xarray==2025.10.1
 matplotlib==3.10.7
@@ -28,6 +29,7 @@ pygmt==0.17.0
 psutil==7.1.1
 
 ## Jupyter environment
+```text
 jupyterlab==4.4.10
 notebook==7.4.7
 ipykernel==7.0.1
@@ -40,20 +42,20 @@ Linux: sudo apt install gmt gmt-dcw gmt-gshhg
 Conda users: conda install -c conda-forge pygmt gmt
 
 ## Directory Structure
-
+```text
 Geodetic-Finite-Fault-Inversion/
 ├── example/
 │   └── Ridgecrest/
 │       ├── input/          # GNSS, InSAR, phase-gradient observations
 │       └── model/          # Inversion configuration files
 └── src/
-    ├── Faults_Construt.py  # Fault geometry construction
-    ├── Green_functions.py  # Green’s function calculation
+    ├── Faults_Construt.py      # Fault geometry construction
+    ├── Green_functions.py      # Green’s function calculation
     ├── Forward_modeling.py
-    ├── Inversion.py       # Core inversion routines
-    ├── Subsample.py       # Data subsampling
-    ├── Read_Config.py     # Configuration parser
-    ├── main_inv.py        # Main inversion entry
+    ├── Inversion.py            # Core inversion routines
+    ├── Subsample.py            # Data subsampling
+    ├── Read_Config.py          # Configuration parser
+    ├── main_inv.py             # Main inversion entry
     └── main_inv_ridgecrest.py
 
 The example dataset corresponds to the 2019 Ridgecrest earthquake sequence
