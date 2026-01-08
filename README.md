@@ -32,7 +32,7 @@ scipy==1.16.2
 pygmt==0.17.0
 psutil==7.1.1
 </details>
-
+```
 ## Jupyter environment
 ```text
 jupyterlab==4.4.10
