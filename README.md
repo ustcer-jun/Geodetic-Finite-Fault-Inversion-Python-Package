@@ -18,8 +18,12 @@ The framework supports:
 - Forwarding 3D displacement using Okada dislocation theory
 - Regularized inversion with optional smoothing constraints
 
-## Requirements (Core dependecies for using this package)
-```text
+## Requirements
+
+<details>
+<summary>Core dependencies</summary>
+
+```bash
 numpy==2.3.4
 xarray==2025.10.1
 matplotlib==3.10.7
@@ -27,7 +31,8 @@ pyproj==3.7.2
 scipy==1.16.2
 pygmt==0.17.0
 psutil==7.1.1
-```
+</details>
+
 ## Jupyter environment
 ```text
 jupyterlab==4.4.10
