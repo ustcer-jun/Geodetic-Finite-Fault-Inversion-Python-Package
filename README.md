@@ -27,6 +27,7 @@ To fully reproduce the development environment:
 ```bash
 conda env create -f environment.yml
 conda activate geodetic-ffi
+```
 
 ### Core dependencies
 ```text
