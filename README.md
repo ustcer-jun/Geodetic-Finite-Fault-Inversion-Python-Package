@@ -19,6 +19,14 @@ The framework supports:
 - Regularized inversion with optional smoothing constraints
 
 ## Requirements
+This project supports both **conda** and **pip** based environments.
+
+### Conda (recommended)
+To fully reproduce the development environment:
+
+```bash
+conda env create -f environment.yml
+conda activate geodetic-ffi
 
 ### Core dependencies
 ```text
